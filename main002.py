@@ -164,6 +164,7 @@ ax1 = plt.subplot()
 freq, time, Zxx = spectr_num(trace_as_np_array, fs=500, fft_size=128*2, noverlap=64*3+32)
 cmap='nipy_spectral'
 cmap='magma'
+#https://matplotlib.org/stable/tutorials/colors/colormaps.html
 fs=500
 autopower = np.abs(Zxx * np.conj(Zxx))
 k = np.amax(autopower)
